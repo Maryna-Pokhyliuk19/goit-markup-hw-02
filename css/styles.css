@@ -1,3 +1,19 @@
+:root {
+    --header-color: #212121;
+    --header-mail-link-color: #2196F3;
+    --header-tel-link-color: #757575;
+    --main-title-color: #FFFFFF;
+    --main-btn-color: #FFFFFF;
+    --second-btn-color: #212121;
+    --second-title-color: #212121;
+    --third-title-color: #212121;
+    --text-color: #757575;
+    --footer-color: #FFFFFF;
+    
+
+
+}
+
 body {
     font-family: "Roboto",
     Tahoma, sans-serif;
@@ -13,7 +29,7 @@ body {
     list-style: none;
 }
 
-
+/*-------------Header-----------------*/
 
 .header-mail-link
 {
@@ -24,8 +40,9 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: #2196F3;
+color: var(--header-mail-link-color);
 }
+
 
 .header-tel-link {
     font-family: 'Roboto';
@@ -35,7 +52,7 @@ color: #2196F3;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--header-tel-link-color);
 }
 
 .header-logo-link
@@ -65,13 +82,41 @@ color: #2196F3;
     color: #000000;
 }
 
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+}
 .header-link:hover
 {
     color: #2196F3;
 }
 
-.header-link:focus {
+.header-link:focus
+ {
     color: #2196F3;
+}
+
+/*------------Main-------------------*/
+
+.main-content {
+    background-color: #2F303A;;
+}
+.main-section-title {
+    font-family: "Roboto",
+    Tahoma,
+    sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: var(--main-title-color)
 }
 
 .main-section-button
@@ -87,20 +132,142 @@ color: #2196F3;
     text-align: center;
     letter-spacing: 0.06em;
     
-    color: #FFFFFF;
+    color: var(--main-btn-color);
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
-/* цвет основного текста #212121*/
+/*----------Сильные навыки------------*/
 
-/* вторичный цвет текста #757575*/
+.hard-skills {}
 
-/* цвет текста имейла #2196F3*/
+.hard-skills-title 
 
-/* цвет главного заголовка #FFFFFF*/
+.hard-skills-list {}
 
-/* цвет лого #2196F3 #00
+.list {}
 
+.hard-skills-item {}
+
+.hard-skills-subtitle {
+    font-family: "Roboto",
+    Tahoma,
+    sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--third-title-color);
 }
+
+.hard-skills-text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/*-----------Activity---------------*/
+
+.activity-title {
+    font-family: "Roboto",
+    Tahoma,
+    sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+/*---------------Our team------------*/
+
+.our-team {}
+
+.our-team-title {
+    font-family: "Roboto",
+    Tahoma,
+    sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+.our-team-list {}
+
+.list {}
+
+.our-team-item {}
+
+.our-team-subtitle {
+    font-family: "Roboto",
+    Tahoma,
+    sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--third-title-color);
+}
+
+.our-team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+
+/*----------Footer-------------------*/
+
+.footer-content {
+    background-color: #2F303A;
+}
+
+.footer-logo-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196F3;
+}
+
+.footer-sublogo-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-color);
+}
+

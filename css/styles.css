@@ -1,6 +1,7 @@
 :root {
+    --background-color: #FFFFFF;
     --header-color: #212121;
-    --header-mail-link-color: #2196F3;
+    --header-mail-link-color: #757575;
     --header-tel-link-color: #757575;
     --main-title-color: #FFFFFF;
     --main-btn-color: #FFFFFF;
@@ -17,7 +18,12 @@
 body {
     font-family: "Roboto",
     Tahoma, sans-serif;
-    background-color: #F5F4FA;
+    font-style: normal;
+    background-color: var(--background-color);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 .link
@@ -54,6 +60,9 @@ letter-spacing: 0.02em;
 color: var(--header-mail-link-color);
 }
 
+.header-mail-link:hover, :focus {
+    color: var(--accent-color);
+}
 .header-tel-link {
     font-family: 'Roboto';
     font-style: normal;
@@ -62,6 +71,10 @@ color: var(--header-mail-link-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-tel-link-color);
+}
+.header-tel-link:hover,
+:focus {
+    color: var(--accent-color);
 }
 
 .header-logo-link
@@ -111,9 +124,6 @@ color: #2196F3;
     background-color: #2F303A;;
 }
 .main-section-title {
-    font-family: "Roboto",
-    Tahoma,
-    sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -144,10 +154,6 @@ color: #2196F3;
 
 
 .hard-skills-subtitle {
-    font-family: "Roboto",
-    Tahoma,
-    sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -165,10 +171,6 @@ color: #2196F3;
 /*-----------Activity---------------*/
 
 .activity-title {
-    font-family: "Roboto",
-    Tahoma,
-    sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -182,10 +184,6 @@ color: #2196F3;
 .our-team {}
 
 .our-team-title {
-    font-family: "Roboto",
-    Tahoma,
-    sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -195,10 +193,6 @@ color: #2196F3;
 }
 
 .our-team-subtitle {
-    font-family: "Roboto",
-    Tahoma,
-    sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -286,10 +280,6 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .project-title {
-    font-family: "Roboto",
-    Tahoma,
-    sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -300,4 +290,5 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    color: #757575;
 }
